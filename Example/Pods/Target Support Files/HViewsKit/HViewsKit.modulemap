@@ -1,0 +1,6 @@
+framework module HViewsKit {
+  umbrella header "HViewsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - HViewsKit (0.1.0)
+
+DEPENDENCIES:
+  - HViewsKit (from `../`)
+
+EXTERNAL SOURCES:
+  HViewsKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HViewsKit: f56255e8eed01f7f1b9e3b127bd91d741fc9ded1
+
+PODFILE CHECKSUM: 982a1a676dad2f969ab0c89605732b0c1eafb4b4
+
+COCOAPODS: 1.12.0
