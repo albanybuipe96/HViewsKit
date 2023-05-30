@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct LoginForm: View {
+public struct LoginForm: View {
+    
+    public init() {
+    }
     
     @State var username: String = ""
     @State var password: String = ""
     
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Spacer()
             Text("Log in")

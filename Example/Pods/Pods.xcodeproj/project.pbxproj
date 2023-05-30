@@ -106,9 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				9C407AD82A26259D00012D04 /* Spinner.swift */,
+				9C407AF42A26593500012D04 /* LoginForm.swift */,
 				6A96D785AD30FD1EEF28C9E655B3B5AE /* Pod */,
 				1B49387FC2E9152EAB532C62ACFBF67C /* Support Files */,
-				9C407AF42A26593500012D04 /* LoginForm.swift */,
 			);
 			name = HViewsKit;
 			path = ../..;
