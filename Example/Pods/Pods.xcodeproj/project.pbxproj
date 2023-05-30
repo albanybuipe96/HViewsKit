@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8BD7F0A6CF571D4A092B1F7075874678 /* Pods-HViewsKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E011DAB74B9F9256188F895C4AEFCD8 /* Pods-HViewsKit_Example-dummy.m */; };
 		9C407AD92A26259D00012D04 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407AD82A26259D00012D04 /* Spinner.swift */; };
+		9C407AF52A26593500012D04 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407AF42A26593500012D04 /* LoginForm.swift */; };
 		AAD8AAA79A1BEBAD9F2E5FCD6678A36F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		BD1EA27C2DB57EB3F735406A762C8B44 /* HViewsKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46247E7AA2CB31BAB04BF10C7FAB1679 /* HViewsKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C11457A3A7ADCB9802DB6CB2A7856EC8 /* Pods-HViewsKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55EE65938E68240DD86378A06A45EC12 /* Pods-HViewsKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +57,7 @@
 		90457D23D57593ABB415FDDE603C2DDE /* HViewsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HViewsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		931E5C0F437AB98B717D6E91253DC523 /* Pods_HViewsKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HViewsKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C407AD82A26259D00012D04 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Spinner.swift; path = HViewsKit/Classes/Spinner.swift; sourceTree = "<group>"; };
+		9C407AF42A26593500012D04 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginForm.swift; path = HViewsKit/Classes/LoginForm.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B6DB76362317F89CA20DBC9FFD24624C /* Pods-HViewsKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HViewsKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B7DCDFC61302C051A69D8DA93D87DCB8 /* Pods-HViewsKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HViewsKit_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				9C407AD82A26259D00012D04 /* Spinner.swift */,
 				6A96D785AD30FD1EEF28C9E655B3B5AE /* Pod */,
 				1B49387FC2E9152EAB532C62ACFBF67C /* Support Files */,
+				9C407AF42A26593500012D04 /* LoginForm.swift */,
 			);
 			name = HViewsKit;
 			path = ../..;
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E430E31DD641AE7671B903B494E7BE77 /* HViewsKit-dummy.m in Sources */,
+				9C407AF52A26593500012D04 /* LoginForm.swift in Sources */,
 				9C407AD92A26259D00012D04 /* Spinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +431,7 @@
 				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-HViewsKit_Example/Pods-HViewsKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +470,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HViewsKit/HViewsKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HViewsKit/HViewsKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,7 +507,7 @@
 				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-HViewsKit_Tests/Pods-HViewsKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,7 +582,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -604,7 +608,7 @@
 				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-HViewsKit_Example/Pods-HViewsKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,7 +646,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HViewsKit/HViewsKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HViewsKit/HViewsKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -717,7 +721,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -744,7 +748,7 @@
 				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-HViewsKit_Tests/Pods-HViewsKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
